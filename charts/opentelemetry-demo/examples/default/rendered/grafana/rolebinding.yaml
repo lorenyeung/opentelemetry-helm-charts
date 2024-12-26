@@ -17,4 +17,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: example-grafana
-  namespace: default
+  namespace: {{.Values.namespace}}
