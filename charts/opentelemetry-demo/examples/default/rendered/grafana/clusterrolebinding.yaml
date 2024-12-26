@@ -12,7 +12,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: example-grafana
-    namespace: default
+    namespace: {{.Values.namespace}}
 roleRef:
   kind: ClusterRole
   name: example-grafana-clusterrole
