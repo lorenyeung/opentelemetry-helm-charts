@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: example-grafana
-  namespace: default
+  namespace: {{.Values.namespace}}
   labels:
     helm.sh/chart: grafana-8.6.4
     app.kubernetes.io/name: grafana
